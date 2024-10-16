@@ -1,0 +1,147 @@
+*{
+    list-style: none;
+}
+body{
+    background-color: black;
+    color: white;
+    font-family: "podium-soft-variable",sans-serif;
+    font-variation-settings: 'wdth' 100;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    .nav-toggle{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .container-nav-bar{
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Formulario */
+#article-form{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    align-items: center;
+    form {
+        max-width: 400px;
+        margin: 20px auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        color: black;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+    
+        input[type="text"],
+        input[type="email"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #000;
+            border-radius: 5px;
+            font-size: 16px;
+            
+            &:invalid {
+                border-color: red;
+            }
+        }
+    
+        textarea {
+            resize: none;
+            height: 100px;
+        }
+    
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #8a8bce;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+    
+            &:disabled {
+                background-color: #ccc;
+            }
+        }
+    }
+}
+
+
+/* lenguajes */
+.iconos i {
+    font-size: 150px;
+    display: inline-block;
+}
+
+.iconos svg {
+    height: 150px;
+    width: auto;
+    display: inline-block;
+}
+/* termina lenguajes */
+
+/* media querys */
+
+@media (min-width: 768px){
+    header{
+        justify-content: space-around;
+        width: 100%;
+        .nav-toggle{
+            display: none;
+        }
+        .container-nav-bar{
+            display: block;
+            display: flex;
+            ul{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                gap: 20px;
+                align-items: center;
+            }
+        }
+    }
+}
